@@ -1,0 +1,77 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?37bddb88c90c10b60a63eb09083b6e8e") format("truetype"),
+url("./flaticon.woff?37bddb88c90c10b60a63eb09083b6e8e") format("woff"),
+url("./flaticon.woff2?37bddb88c90c10b60a63eb09083b6e8e") format("woff2"),
+url("./flaticon.eot?37bddb88c90c10b60a63eb09083b6e8e#iefix") format("embedded-opentype"),
+url("./flaticon.svg?37bddb88c90c10b60a63eb09083b6e8e#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "grocery-bag": "\f101",
+    "correct": "\f102",
+    "plus": "\f103",
+    "paypal": "\f104",
+    "discount": "\f105",
+    "laptop": "\f106",
+    "wrench": "\f107",
+    "tshirt": "\f108",
+    "baby-boy": "\f109",
+    "heartbeat": "\f10a",
+    "armchair": "\f10b",
+    "stationery": "\f10c",
+    "tent": "\f10d",
+);
+
+.flaticon-grocery-bag:before {
+    content: map-get($flaticon-map, "grocery-bag");
+}
+.flaticon-correct:before {
+    content: map-get($flaticon-map, "correct");
+}
+.flaticon-plus:before {
+    content: map-get($flaticon-map, "plus");
+}
+.flaticon-paypal:before {
+    content: map-get($flaticon-map, "paypal");
+}
+.flaticon-discount:before {
+    content: map-get($flaticon-map, "discount");
+}
+.flaticon-laptop:before {
+    content: map-get($flaticon-map, "laptop");
+}
+.flaticon-wrench:before {
+    content: map-get($flaticon-map, "wrench");
+}
+.flaticon-tshirt:before {
+    content: map-get($flaticon-map, "tshirt");
+}
+.flaticon-baby-boy:before {
+    content: map-get($flaticon-map, "baby-boy");
+}
+.flaticon-heartbeat:before {
+    content: map-get($flaticon-map, "heartbeat");
+}
+.flaticon-armchair:before {
+    content: map-get($flaticon-map, "armchair");
+}
+.flaticon-stationery:before {
+    content: map-get($flaticon-map, "stationery");
+}
+.flaticon-tent:before {
+    content: map-get($flaticon-map, "tent");
+}
