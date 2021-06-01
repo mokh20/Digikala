@@ -251,6 +251,7 @@ a:link {
 .slides-MainTopRight {
     width: 12.5%;
     padding: .5rem;
+    transition: .4s ease all;
 }
 
 .slide-pic-box-MainTopRight img {
