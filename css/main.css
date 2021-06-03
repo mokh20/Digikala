@@ -342,6 +342,11 @@ a:link {
     visibility: hidden;
 }
 
+.AmazingOffer {
+    display: none;
+    visibility: hidden;
+}
+
 @media screen and (min-width: 450px) {
     .slides-MainTopRight,
     .MainTopRight,
@@ -543,26 +548,105 @@ a:link {
         height: 500px;
         display: grid;
         grid-template-columns: 1fr 3fr;
+        visibility: visible;
     }
     /* Description Offer */
     .AmazingOffer-box {
-        width: 10%;
+        width: 250px;
         height: 100%;
+        display: grid;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .AmazingOffer-text {
+        font-size: 2rem;
+        text-align: center;
+        white-space: pre-line;
+        line-height: 1.2;
+        display: grid;
+        align-self: flex-end;
+        font-family: iransans-medium;
+    }
+    .AmazingOffer-box-pic {
+        width: 200px;
+        height: 100%;
+    }
+    .AmazingOffer-box-pic img {
+        width: 100%;
+    }
+    .AmazingOffer-box-button {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: none;
+    }
+    .AmazingOffer-box-button button {
+        width: 130px;
+        height: 45px;
+        background-color: rgba(255, 255, 255, 0.055);
+        border: 1px solid white;
+        border-radius: 10px;
+        font-family: iransans-medium;
+        color: white;
+        position: relative;
+    }
+    .AmazingOffer-box-button button b::after {
+        content: "";
+        position: absolute;
+        left: 12px;
+        top: 17px;
+        transform: rotate(45deg);
+        border: 2px solid rgb(255, 255, 255);
+        width: 5px;
+        height: 5px;
+        border-right: none;
+        border-top: none;
     }
     /* List of products */
     .AmazingOffer-slidesshow {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         margin: .5rem;
+        max-width: 1040px;
+        position: relative;
+    }
+    .AmazingOffer-slidesshow::after {
+        content: "";
+        position: absolute;
+        left: 30px;
+        top: 40%;
+        transform: rotate(45deg);
+        border: 3px solid rgb(0, 0, 0);
+        width: 20px;
+        height: 20px;
+        border-right: none;
+        border-top: none;
+    }
+    .AmazingOffer-slidesshow::before {
+        content: "";
+        position: absolute;
+        right: 30px;
+        top: 40%;
+        transform: rotate(225deg);
+        border: 3px solid rgb(202, 202, 202);
+        width: 20px;
+        height: 20px;
+        border-right: none;
+        border-top: none;
     }
     /* The box of product */
     .AmazingOffer-slidebox {
-        width: 300px;
+        min-width: 250px;
+        max-width: 300px;
         background-color: white;
         border-radius: 10px;
-        margin: .5rem;
+        margin: .3rem;
         display: grid;
         align-items: center;
+        height: 430px;
     }
     .slideshow-slidebox-pic {
         display: grid;
@@ -580,20 +664,19 @@ a:link {
         align-items: flex-start;
         font-family: iransans-light;
         height: 100%;
+        margin: 0 1rem;
     }
     .slideshow-slidebox-description p,
     .slideshow-slidebox-description b {
         line-height: 2.3;
-        text-align: center;
-        margin: 0 1rem;
-        font-size: .9rem;
+        font-size: .8rem;
         height: 100%;
         display: grid;
         align-items: center;
+        word-wrap: break-word;
     }
     .slideshow-slidebox-description b {
         text-align: end;
-        margin-left: 1.8rem;
         letter-spacing: 1.2px;
     }
 }
