@@ -102,7 +102,6 @@
         justify-content: flex-end;
         align-items: center;
         height: 100%;
-        /* grid-area: "head-middle-left"; */
     }
     
     .search-botton {
@@ -309,7 +308,7 @@
     .prev-MainTopRight,
     .next-MainTopRight {
         position: absolute;
-        left: 20px;
+        left: 30px;
         top: auto;
         transform: rotate( 45deg);
         border: 3px solid rgb(209, 27, 27);
@@ -322,7 +321,7 @@
     }
     
     .next-MainTopRight {
-        right: 20px;
+        right: 30px;
         transform: rotate( -135deg);
     }
     /* MainTopLeft */
@@ -335,6 +334,36 @@
     .AmazingOffer {
         display: none;
         visibility: hidden;
+    }
+    /* SaleServices */
+    
+    .SaleServices {
+        border-bottom: 1px solid rgb(228, 228, 228);
+        margin: 0 .6rem;
+    }
+    
+    .SaleServices-main {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .SaleServices-box {
+        color: rgb(31, 31, 31);
+        font: .7rem iransans-light;
+        text-align: center;
+    }
+    
+    .SaleServices-box p {
+        padding: .8rem.5rem;
+    }
+    
+    .SaleServices-pic {
+        padding: 0rem 1.2rem;
+    }
+    
+    .SaleServices-pic img {
+        width: 50px;
     }
     
     @media screen and (min-width: 450px) {
@@ -668,6 +697,11 @@
         .slideshow-slidebox-description b {
             text-align: end;
             letter-spacing: 1.2px;
+        }
+        /* SaleService */
+        .SaleServices {
+            display: none;
+            visibility: hidden;
         }
     }
     
