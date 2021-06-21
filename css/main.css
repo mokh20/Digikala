@@ -90,7 +90,6 @@
     
     .head-middle {
         display: flex;
-        /* grid-template-columns: 1fr 1fr; */
         height: 50px;
         border-bottom: 1px solid rgb(228, 228, 228);
         padding: 0 1rem;
@@ -365,6 +364,43 @@
     .SaleServices-pic img {
         width: 50px;
     }
+    /* SuggestedCategories */
+    
+    .SuggestedCategories-main {
+        display: grid;
+        grid-template-areas: "Kaleh Kaleh" "Pindo Pril" "Volleyball Volleyball";
+        padding: .5rem;
+    }
+    
+    .SuggestedCategories-box:first-child {
+        grid-area: Kaleh;
+    }
+    
+    .SuggestedCategories-box:nth-child(2) {
+        grid-area: Pindo;
+    }
+    
+    .SuggestedCategories-box:nth-child(3) {
+        grid-area: Pril;
+    }
+    
+    .SuggestedCategories-box:last-child {
+        grid-area: Volleyball;
+    }
+    
+    .SuggestedCategories-box {
+        width: 100%;
+        padding: .3rem;
+    }
+    
+    .SuggestedCategories-pic {
+        width: 100%;
+    }
+    
+    .SuggestedCategories-pic img {
+        width: 100%;
+        border-radius: 10px;
+    }
     
     @media screen and (min-width: 450px) {
         .slides-MainTopRight,
@@ -375,6 +411,10 @@
         }
         .slide-pic-box-MainTopRight img {
             max-height: calc(100% - .5rem);
+        }
+        /*  SuggestedCategories */
+        .SuggestedCategories-main {
+            grid-template-areas: "Kaleh Pindo" "Pril Volleyball";
         }
     }
     
@@ -395,7 +435,6 @@
         .head-top {
             grid-area: logo;
             border-bottom: none;
-            /* height: 0px; */
             display: grid;
             align-self: center;
             width: 80px;
@@ -702,6 +741,16 @@
         .SaleServices {
             display: none;
             visibility: hidden;
+        }
+        /*  SuggestedCategories */
+        .SuggestedCategories {
+            padding: 1rem 0rem;
+        }
+        .SuggestedCategories-main {
+            grid-template-areas: "Kaleh Pindo Pril Volleyball";
+        }
+        .SuggestedCategories-box {
+            padding: 0 .5rem;
         }
     }
     
